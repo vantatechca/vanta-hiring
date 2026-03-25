@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS applicants (
+  id SERIAL PRIMARY KEY,
+  full_name VARCHAR(255) NOT NULL,
+  phone VARCHAR(50) NOT NULL,
+  date_of_birth DATE NOT NULL,
+  id_image TEXT,
+  id_image_type VARCHAR(50),
+  marital_status VARCHAR(50),
+  available_weekends BOOLEAN DEFAULT false,
+  available_evenings BOOLEAN DEFAULT false,
+  on_call_emergencies BOOLEAN DEFAULT false,
+  has_drivers_license BOOLEAN DEFAULT false,
+  startup_mindset BOOLEAN DEFAULT false,
+  has_second_job BOOLEAN DEFAULT false,
+  second_job_details TEXT,
+  other_commitments TEXT,
+  commitment_level VARCHAR(20),
+  nda_agreed BOOLEAN DEFAULT false,
+  submitted_at TIMESTAMP DEFAULT NOW()
+);

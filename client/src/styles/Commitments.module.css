@@ -1,0 +1,91 @@
+.toggleWrapper {
+  margin-bottom: 14px;
+}
+
+.detailsWrapper {
+  margin-bottom: 14px;
+}
+
+.levelGrid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.levelOption {
+  flex: 1 1 80px;
+  padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: center;
+}
+
+.levelOption:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.levelOptionLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.levelOptionSub {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 2px;
+}
+
+/* Active state colors per level */
+.levelNone {
+  background: #edf6f1;
+  border-color: #2d6a4f;
+}
+.levelNone .levelOptionLabel,
+.levelNone .levelOptionSub {
+  color: #2d6a4f;
+}
+.levelNone .levelOptionSub {
+  opacity: 0.8;
+}
+
+.levelMinor {
+  background: #fffbeb;
+  border-color: #d97706;
+}
+.levelMinor .levelOptionLabel,
+.levelMinor .levelOptionSub {
+  color: #92400e;
+}
+.levelMinor .levelOptionSub {
+  opacity: 0.8;
+}
+
+.levelModerate {
+  background: #fff7ed;
+  border-color: #ea580c;
+}
+.levelModerate .levelOptionLabel,
+.levelModerate .levelOptionSub {
+  color: #9a3412;
+}
+.levelModerate .levelOptionSub {
+  opacity: 0.8;
+}
+
+.levelMajor {
+  background: #fdf2f8;
+  border-color: #c026d3;
+}
+.levelMajor .levelOptionLabel,
+.levelMajor .levelOptionSub {
+  color: #86198f;
+}
+.levelMajor .levelOptionSub {
+  opacity: 0.8;
+}

@@ -1,0 +1,58 @@
+.ndaBox {
+  padding: 16px 18px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.ndaBox:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.ndaBoxChecked {
+  border-color: #c84b31;
+  background: var(--accent-light);
+}
+
+.ndaCheckBox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border2);
+  border-radius: 4px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: all 0.15s;
+}
+
+.ndaCheckBoxChecked {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.ndaCheckMark {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ndaText {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.55;
+}
+
+.ndaTextStrong {
+  font-weight: 600;
+  color: var(--text);
+}
