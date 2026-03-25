@@ -1,0 +1,81 @@
+.toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.toggleChecked {
+  border-color: #2d6a4f;
+  background: var(--green-light);
+}
+
+.toggleBox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border2);
+  border-radius: 4px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  transition: all 0.15s;
+}
+
+.toggleBoxChecked {
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.toggleCheck {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.toggleLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.toggleLabelChecked {
+  color: var(--green);
+}
+
+.toggleSub {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 1px;
+}
+
+.togglesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.togglesGridFull {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 560px) {
+  .togglesGrid {
+    grid-template-columns: 1fr;
+  }
+}
