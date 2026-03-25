@@ -2,7 +2,7 @@ services:
   - type: web
     name: hiring-form
     env: node
-    buildCommand: npm install && npm run build
+    buildCommand: npm install && cd client && npm install --production=false && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
