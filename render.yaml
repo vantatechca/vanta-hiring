@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: hiring-form
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: hiring-form-db
+          property: connectionString
+      - key: ADMIN_TOKEN
+        generateValue: true
+
+databases:
+  - name: hiring-form-db
+    databaseName: hiring_form
+    user: hiring_form_user
+    plan: free
